@@ -1,3 +1,4 @@
 theme: jekyll-theme-minimal
 name: Dave.Sri Seah
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
