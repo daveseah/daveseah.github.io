@@ -34,7 +34,7 @@ If we have a fruitful first meeting, the next step is to tailor a few projects a
 
 * **Work with our Codebase** - We have a fairly complicated codebase, and would work with you directly to spec a "bolt-on" system that you can make for our code. After that, we would work out how to integrate the code into our project. This is anywhere between a 10-40 hour project over several weeks. I would be also working with you to help refine our internal documentation, so a secondary supporting role is increasing our experience making things very obvious in code.
 
-After a few projects likt this, we will have a better understanding of how we work together. **It is our goal to form good long-term working relationships with our contractors.**
+After a few projects like this, we will have a better idea of how we work together and take it from there. **It is our goal to form good long-term working relationships with contractors.**
 
 ### Our Clients
 
