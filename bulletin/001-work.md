@@ -22,7 +22,7 @@ links:
 
 I have a good working relationship with Inquirium and Dr. Loh. developing realtime software. Most recently, we have been working on a series of National Science Foundation-funded grant work. 
 
-While Ben and I are pretty experienced with computer graphics, we know we don't know everything, and could benefit from knowledgeable people to help us develop more capable systems. We adopted Javascript as one of our new platforms in 2013, and would love to find knowledgeable people to develop with!
+While Ben and I are pretty experienced with computer graphics going back to the 1980s, there is a LOT of technology to keep up with. We adopted Javascript as one of our new platforms in 2013, and would love to find knowledgeable people help steer our development path.
 
 ### Initial Project Work
 
@@ -34,7 +34,7 @@ If we have a fruitful first meeting, the next step is to tailor a few projects a
 
 * **Work with our Codebase** - We have a fairly complicated codebase, and would work with you directly to spec a "bolt-on" system that you can make for our code. After that, we would work out how to integrate the code into our project. This is anywhere between a 10-40 hour project over several weeks. I would be also working with you to help refine our internal documentation, so a secondary supporting role is increasing our experience making things very obvious in code.
 
-After a few projects likt this, we will have a better understanding of how we work together. It is our goal to form good long-term working relationships with our contractors.
+After a few projects likt this, we will have a better understanding of how we work together. **It is our goal to form good long-term working relationships with our contractors.**
 
 ### Our Clients
 
