@@ -1,5 +1,10 @@
-title: Dave.Sri Seah
+# when changing this file, need to restart server
+# all keys are prefaced with site (e.g. site.title)
+title: dave sri seah
+description: information staging site
+homepage: https://davidseah.com
 markdown: kramdown
+logo: /assets/ds/daveseah-2018-applenews-icon.png
 permalink: /blog/:year/:month/:day/:title
 github.repository_url: https://github.com/daveseah
 github.owner_url: https://davidseah.com

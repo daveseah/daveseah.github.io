@@ -12,6 +12,8 @@ source "https://rubygems.org"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # gem "minima", "~> 2.0"
+# comment this out after copying the contents of the gem here
+# don't forget to update the config
 # gem "jekyll-theme-minimal"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and

@@ -56,3 +56,10 @@ add
 export PATH=$HOME/.gem/ruby/X.X.0/bin:$PATH # replace X.X.0 with version
 to .bash_profile
 ```
+
+To SERVE on ALL INTERFACES
+
+`bundle exec jekyll serve --host 0.0.0.0`
+
+to find local ip address via Terminal
+`ipconfig getifaddr en1` (there is an inet and inet6 prop listed)

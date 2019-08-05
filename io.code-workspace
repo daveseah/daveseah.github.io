@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "/Users/sri/Dev/test"
 		}
 	],
 	"settings": {}
