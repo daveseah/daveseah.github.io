@@ -2,6 +2,7 @@
 layout: default
 title: Javascript Coders for Learning Science Projects
 linktitle: "Javascript Coders Wanted"
+jobdate: "Posted August 4, 2019"
 links: 
 -
     link: 1. Job Description
@@ -19,7 +20,7 @@ links:
 ## {{page.title}}
 # Project Details
 
-I have a long-standing relationship with Inquirium and Dr. Loh. developing realtime software. Most recently, we have been working on a series of National Science Foundation-funded grant work. 
+I have a good working relationship with Inquirium and Dr. Loh. developing realtime software. Most recently, we have been working on a series of National Science Foundation-funded grant work. 
 
 While Ben and I are pretty experienced with computer graphics, we know we don't know everything, and could benefit from knowledgeable people to help us develop more capable systems. We adopted Javascript as one of our new platforms in 2013, and would love to find knowledgeable people to develop with!
 
