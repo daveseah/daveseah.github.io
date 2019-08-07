@@ -4,7 +4,7 @@ title: dave sri seah
 description: information staging site
 homepage: https://davidseah.com
 markdown: kramdown
-logo: /assets/ds/daveseah-2018-applenews-icon.png
+logo: /assets/img/logo-daveseah-512x400.png
 permalink: /blog/:year/:month/:day/:title
 github.repository_url: https://github.com/daveseah
 github.owner_url: https://davidseah.com
