@@ -1,8 +1,8 @@
 # when changing this file, need to restart server
 # all keys are prefaced with site (e.g. site.title)
-title: DAVE.SRI'S
+title: Dave.Sri Seah Works
+description: a collection of applicable experiences
 homepage: https://davidseah.com
-description: INFORMATION SUBSITE
 markdown: kramdown
 logo: /assets/img/logo-daveseah-512x400.png
 permalink: /blog/:year/:month/:day/:title
