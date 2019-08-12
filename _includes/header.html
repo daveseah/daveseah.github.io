@@ -1,13 +1,8 @@
-    <div class="wrapper">
       <header style="text-align:center">
         {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
+        <a href="/"><img src="{{site.logo | relative_url}}" alt="Logo" /></a>
         {% endif %}
         <div id='content-subnav'>
         <h2>{{page.linktitle}}</h2>
-        <p><em>{{page.jobdate}}</em></p>
-        {% for item in page.links %}
-          <p><a href="{{item.url}}">{{item.link}}</a></p>
-        {% endfor %}
         </div>
       </header>

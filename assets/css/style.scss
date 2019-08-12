@@ -1,8 +1,22 @@
 ---
+# front matter added to force jekyll to process this file
 ---
 @import "jekyll-theme-minimal";
 
+/* overrides */
+
+/* makes the page blog align with logo */
 #content-subnav {
     text-align:left;
     margin-left: 15%;
+}
+
+/* add space betwee navigation */
+#content-subnav  .subnav {   
+  margin:0 0 20px;
+}
+
+/* add subnav highlighting */
+#content-subnav  .active {
+    font-weight: bold;
 }

@@ -1,0 +1,16 @@
+---
+header: "Javascript Coders Wanted"
+posted: "Job posted August 4, 2019"
+email: "david@davidseah.com"
+twitter: "@daveseah"
+nav: 
+-   title: 1. Job Description
+    url: /bulletin/001-job/page1-description
+-   title: 2. Project Details
+    url: /bulletin/001-job/page2-details
+-   title: 3. Extras
+    url: /bulletin/001-job/page3-extra
+-   title: Contact Dave
+    url: /bulletin/001-job/page4-contact
+---
+

@@ -1,23 +1,8 @@
 ---
-layout: default
-title: Javascript Coders for Learning Science Projects
-linktitle: "Javascript Coders Wanted"
-jobdate: "Posted August 4, 2019"
-links: 
--
-    link: <strong>1. Job Description</strong>
-    url: /bulletin/001-job
--
-    link: 2. Project Details
-    url: /bulletin/001-work
--
-    link: 3. Extras
-    url: /bulletin/001-xtra
--
-    link: Contact Dave
-    url: /bulletin/001-contact
+layout: template-job
+title: Javascript Coders for Learning Sciences Projects
+jobmeta: "001"
 ---
-## {{page.title}}
 # Job Description
 
 I am looking for **contract programmers** to help us implement classroom-based learning systems. I'd like to find programmers with experience in **ANY** of the following areas:

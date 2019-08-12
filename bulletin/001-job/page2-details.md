@@ -1,23 +1,8 @@
 ---
-layout: default
-title: Javascript Coders for Learning Science Projects
-linktitle: "Javascript Coders Wanted"
-jobdate: "Posted August 4, 2019"
-links: 
--
-    link: 1. Job Description
-    url: /bulletin/001-job
--
-    link: <strong>2. Project Details</strong>
-    url: /bulletin/001-work
--
-    link: 3. Extras
-    url: /bulletin/001-xtra
--
-    link: Contact Dave
-    url: /bulletin/001-contact
+layout: template-job
+title: Javascript Coders for Learning Sciences Projects
+jobmeta: "001"
 ---
-## {{page.title}}
 # Project Details
 
 I have a good working relationship with Inquirium and Dr. Loh. developing realtime software. Most recently, we have been working on a series of National Science Foundation-funded grant work. 
