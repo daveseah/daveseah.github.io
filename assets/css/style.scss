@@ -4,6 +4,7 @@
 @import "jekyll-theme-minimal";
 
 /* overrides */
+.printonly { display:none }
 
 /* makes the page blog align with logo */
 #content-subnav {
@@ -19,4 +20,44 @@
 /* add subnav highlighting */
 #content-subnav  .active {
     font-weight: bold;
+}
+
+@media print, screen and (max-width: 720px) {
+
+    header {
+        text-align: center;
+    }
+    header img {
+        width:60%;
+    }
+
+    #content-subnav {
+        text-align:center;
+        margin-left:0;
+    }
+
+    #content-subnav ul {
+        width: 100%;
+        margin: auto;
+    }
+
+    #content-subnav li {
+        width: 100%;
+    }
+
+    #content-subnav h2 { display:none }
+}
+
+@media print {
+    header img, header ul {
+        display: none;
+    }
+    #content-subnav {
+        text-align:left;
+        margin-left:0;
+    }
+    .printonly {
+        display: block;
+        font-size: smaller
+    }
 }
