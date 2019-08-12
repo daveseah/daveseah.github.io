@@ -4,8 +4,10 @@
 			"path": "."
 		},
 		{
-			"path": "/Users/sri/Dev/test"
+			"path": "./assets/css"
 		}
 	],
-	"settings": {}
+    "settings": {
+        "html.autoClosingTags": false
+    }
 }
