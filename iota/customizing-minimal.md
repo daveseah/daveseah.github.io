@@ -1,5 +1,3 @@
----
----
 ## Customizing Minimal
 
 See https://github.com/pages-themes/minimal
