@@ -21,7 +21,10 @@
 {% endif %}
 
 {% if include.caption %}
-    {% capture caption %}alt='{{include.caption | escape}}'{%endcapture%}
+    {% capture caption %}title='{{include.caption | escape}}'{%endcapture%}
+{% endif %}
+{% if include.alt %}
+    {% capture alt %}alt='{{include.alt | escape}}'{%endcapture%}
 {% endif %}
 {% assign pad2 = pad | plus: border | times: 2 %}
 {% assign ww = width | minus: pad2 %}
@@ -48,5 +51,5 @@ CALCULATED
 * original: {{original}}
 * thumb: {{thumb}}
 
-<a href='{{original}}' class='lzil {{style}}' {{caption}}><img src='{{thumb}}'></a>
+<a href='{{original}}' class='lzil {{style}}'><img src='{{thumb}}' {{alt}} {{caption}}></a>
 
