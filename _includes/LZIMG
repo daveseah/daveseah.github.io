@@ -1,18 +1,23 @@
 {% assign fullWidth = 960 %}
 {% assign pad = 4 %}
 {% assign border = 1 %}
-{% assign site = "http://0.0.0.0:3000" %}
+{% if jekyll.environment == "production" %}
+   {% assign imgServer = "https://davidseah.net" %}
+{%else%}
+   {% assign imgServer = "http://0.0.0.0:3000" %}
+{% endif %}
+
 {% assign nopopup = include.nopopup | false %}
 {% assign size = include.size | default: 3 %}
 {% assign src = include.src | default: "nothing.png" %}
 {% assign style = include.style | default: "left" %}
 {% assign width = fullWidth | divided_by: size | floor %}
 {% assign pathbits = src | split: "." %}
-{% capture original %}{{site}}/images/{{src}}{% endcapture %}
+{% capture original %}{{imgServer}}/images/{{src}}{% endcapture %}
 {% if width==fullWidth %}
     {% assign thumb = original %}
 {% else %}
-    {% capture thumb %}{{site}}/cache/images/{{pathbits[0]}}@{{width}}.jpg{% endcapture %}
+    {% capture thumb %}{{imgServer}}/cache/images/{{pathbits[0]}}@{{width}}.jpg{% endcapture %}
 {% endif %}
 
 {% if include.caption %}
@@ -25,8 +30,8 @@ CONSTANTS
 
 * pad: {{ pad }}
 * border: {{ border }}
-* fullWidth: {{ fillWidth }}
-* site: {{ site }}
+* fullWidth: {{ fullWidth }}
+* imgServer: {{ imgServer }}
 
 PARAMETERS
 
