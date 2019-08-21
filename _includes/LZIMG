@@ -1,6 +1,7 @@
 {% assign fullWidth = 960 %}
 {% assign pad = 4 %}
 {% assign border = 1 %}
+{% assign pad2 = pad | plus: border | times: 2 %}
 {% if jekyll.environment == "production" %}
    {% assign imgServer = "https://davidseah.net" %}
 {%else%}
@@ -8,10 +9,13 @@
 {% endif %}
 
 {% assign nopopup = include.nopopup | false %}
-{% assign size = include.size | default: 3 %}
 {% assign src = include.src | default: "nothing.png" %}
 {% assign style = include.style | default: "left" %}
-{% assign width = fullWidth | divided_by: size | floor %}
+
+{% assign imgsize = include.imgsize | default: 3 %}
+{% assign width = fullWidth | divided_by: imgsize | floor %}
+{% assign adjustedWidth = width | minus: pad2 %}
+
 {% assign pathbits = src | split: "." %}
 {% capture original %}{{imgServer}}/images/{{src}}{% endcapture %}
 {% if width==fullWidth %}
@@ -26,8 +30,6 @@
 {% if include.alt %}
     {% capture alt %}alt='{{include.alt | escape}}'{%endcapture%}
 {% endif %}
-{% assign pad2 = pad | plus: border | times: 2 %}
-{% assign ww = width | minus: pad2 %}
 
 CONSTANTS
 
@@ -38,7 +40,7 @@ CONSTANTS
 
 PARAMETERS
 
-* size: {{ size }}
+* imgsize: {{ imgsize }}
 * src: {{ src }}
 * style: {{ style }}
 * nopopup: {% if nopopup %}TRUE{%else%}FALSE{% endif %} 
@@ -47,9 +49,9 @@ CALCULATED
 
 * image width: {{ width }}
 * (pad+border)*2: {{ pad2}}
-* adjusted width: {{ ww }}
+* adjusted width: {{ adjustedWidth }}
 * original: {{original}}
 * thumb: {{thumb}}
 
-<a href='{{original}}' class='lzil {{style}}'><img src='{{thumb}}' {{alt}} {{caption}}></a>
+<a href='{{original}}' class='lzil {{style}}'><img src='{{thumb}}' width='{{adjustedWidth}}px' {{alt}} {{caption}}></a>
 
