@@ -1,0 +1,47 @@
+{% assign fullWidth = 960 %}
+{% assign pad = 4 %}
+{% assign border = 1 %}
+{% assign site = "http://0.0.0.0:3000" %}
+{% assign nopopup = include.nopopup | false %}
+{% assign size = include.size | default: 3 %}
+{% assign src = include.src | default: "nothing.png" %}
+{% assign style = include.style | default: "left" %}
+{% assign width = fullWidth | divided_by: size | floor %}
+{% assign pathbits = src | split: "." %}
+{% capture original %}{{site}}/images/{{src}}{% endcapture %}
+{% if width==fullWidth %}
+    {% assign thumb = original %}
+{% else %}
+    {% capture thumb %}{{site}}/cache/images/{{pathbits[0]}}@{{width}}.jpg{% endcapture %}
+{% endif %}
+
+{% if include.caption %}
+    {% capture caption %}alt='{{include.caption | escape}}'{%endcapture%}
+{% endif %}
+{% assign pad2 = pad | plus: border | times: 2 %}
+{% assign ww = width | minus: pad2 %}
+
+CONSTANTS
+
+* pad: {{ pad }}
+* border: {{ border }}
+* fullWidth: {{ fillWidth }}
+* site: {{ site }}
+
+PARAMETERS
+
+* size: {{ size }}
+* src: {{ src }}
+* style: {{ style }}
+* nopopup: {% if nopopup %}TRUE{%else%}FALSE{% endif %} 
+
+CALCULATED 
+
+* image width: {{ width }}
+* (pad+border)*2: {{ pad2}}
+* adjusted width: {{ ww }}
+* original: {{original}}
+* thumb: {{thumb}}
+
+<a href='{{original}}' class='lzil {{style}}' {{caption}}><img src='{{thumb}}'></a>
+
