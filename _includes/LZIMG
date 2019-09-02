@@ -33,4 +33,4 @@
 {% if include.alt %}
     {% capture alt %}alt='{{include.alt | escape}}'{%endcapture%}
 {% endif %}
-<a markdown="0" href='{{original}}' class='lzil {{style}}'><img src='{{thumb}}' width='{{widthPXL}}' {{alt}} {{caption}}></a>
+<a href='{{original}}' class='lzil {{style}}'><img src='{{thumb}}' width='{{widthPXL}}' {{alt}} {{caption}}></a>
