@@ -6,7 +6,7 @@
 {% if jekyll.environment == "production" %}
    {% assign imgServer = "https://davidseah.net" %}
 {%else%}
-   {% assign imgServer = "https://davidseah.net" %}
+   {% assign imgServer = "0.0.0.0:3000" %}
 {% endif %}
 {% assign nopopup = include.nopopup | false %}
 {% assign nopad = include.nopad | false %}
