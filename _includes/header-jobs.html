@@ -1,6 +1,5 @@
 {% assign JOB = site.data.jobmeta[page.jobmeta] %}
 {% assign NAVCOUNT = JOB.nav | size %}
-
 {% capture NAVLIST %}
 {% for item in JOB.nav %}
   {% if item.url == page.url %} 
@@ -16,9 +15,6 @@
   </li>
 {% endfor %}
 {% endcapture %}
-
-
-
 <header>
   {% if site.logo %}
     <a href="/"><img src="{{site.logo | relative_url}}" alt="Logo" /></a>

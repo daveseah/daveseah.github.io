@@ -5,7 +5,7 @@ description: a collection of applicable experiences
 homepage: https://davidseah.com
 plugins:
   - jekyll-sitemap
-markdown: CommonMarkGhPages
+markdown: kramdown
 logo: /assets/img/logo-daveseah-512x400.png
 permalink: /blog/:year/:month/:day/:title
 github.repository_url: https://github.com/daveseah
