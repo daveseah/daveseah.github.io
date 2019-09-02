@@ -21,32 +21,3 @@ To **test** the files, use
 
 The **image server** that handles image resizing is hosted at `davidseah.net` by a Node ExpressJS app implementing Lazy Image Layout. This is a *SEPARATE* repo from the Jekyll site. To update this site, 
 
-### Assets Directory
-
-Site-wide static assets go into `assets`. 
-
-### Using Images
-
-You can upload image files to `davidseah.net/app/_docroot/images` in either JPEG or PNG format. If you uploaded a file to `images/19/0805-lrc-03.jpg`, use the special LZIL INCLUDE in your page file:
-
-```
-{%raw%}
-{% include LZIMG src='19/0805-lrc-03.jpg' 
-   style='left' nopopup=false
-   caption="optional caption goes here"
-   alt="a picture of a something"
-%}
-{%endraw%}
-```
-
-Currently the supported `LZIMG` options are:
-
-| param | options | notes 
-|:---|:---|:---
-| style | 'left', 'right' | (default left) classes defined in `assets/css/style.css`
-| imgsize | `integer` | (default 3) image width  as in `1/imgsize * fullWidth`, where fullWidth is defined in `include/LZIMG` as 500.
-| nopopup | true, false | (default false) whether to implement popup (unimplemented)
-| caption | 'caption string' | set the `title` attribute 
-| alt | 'image description' | set the `alt` attribute for screen readers
-
-
