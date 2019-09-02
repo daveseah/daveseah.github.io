@@ -15,26 +15,36 @@ Sri's Knowledge Base Filing System (SRI-KBFS) is a file-based notebook system de
 * Unique user-entered ids ('SRID') with generated external short refs ('XURL')
 * Derived document from source collection with generated SRID codes
 
-Features:
+I just want to think and write as fast as possible, and have the system help arrange my thinking into remixable ideas through features like:
 
-* Low-friction text-based editing of working notes
+* automatic generation of reference material from deep document inspection
+* inference of metadata whenever possible 
+* automatic generation and back-insertion of cross references into source documents
+* automatic document id consistency checking
+* support discovery of patterns in evolving material through faceted categorization
+
+Other features:
+
+* Low-friction text-based editing of working notes with inferred publication state
+* Automatic separation of public and private notes, inferred from content tagging instead of hierarchy
 * Automatic transformation of notes into publishable works-in-progress
-* Automatic back-annotation into source docs of references to other content
-* Automatic summary extraction from first paragraph on page with lead-in 'SUMMARY:' keyword.
 * Automatic title extraction from first header on page
-* Automatic indexing and reference link replacement/insertion
-* Automatic change and document history (using Git)
-* Automatic category and index page generation
-* Generate visualization to show content and tag relationships.
-* Enhanced markup language based on Markdown
+* Automatic summary extraction from first paragraph on page with lead-in 'SUMMARY:' keyword.
+* Document versioning (using Git)
+* Enhanced markup language based on Markdown to inline tagging and section marking
+* Generate netgraph visualization to show content and tag relationships.
 
-The system is being prototyped using off-the-shelf static site generators. I'm using JEKYLL currently.
+The system is being prototyped using off-the-shelf static site generators. I'm using JEKYLL currently but will likely move to a NodeJS-based Javascript implementation to add the above features.
 
 ## Concept: Publish on Assignment of ID
 
 Folders and files are used to store content, but are not used to generate pathnames. Use files and folders in any way to keep track of temporary notes. To register a note with the system, add a `SRID` of the form `0000:YYYY:MMDD:HHMM` to generate a unique id within your file store. KBFS will generate a public file that can be addressed by a `XURL` or by `SRID`; these are the "evergreen canonical links". 
 
+The reason for this approach is that most of the time, the filesystem is in flux as new ideas are developed. I am constantly renaming and moving things in folders. Ideally, the folder structure itself doesn't matter and the **canonical id**, **groups**, **inferred relationships**, and **cross references** can live anywhere. The system uses the `SRID` as the unique identifier, and generates pages and derived content from it and the relationships it can uncover. 
+
 ## Reference: SRI-KBS Front Matter
+
+Here's the relationships I'm currently considering:
 
 * **`SRID`** Sri Knowledge Base File System Id - Of the form `0000-YYYY-MMDD-HHMM`. User codes begin with `0000`, and generated codes for derived content start with `1000`. 
 * **`STAG`** Content Tag - Used for informal tag names. Case insensitive, alphanumeric no spaces or punctuation in Sri Tag Group Format: 'tag', 'tag1, tag2', 'agroupname: tag1, tag2', 'tag (long tag string name)'
@@ -44,7 +54,7 @@ Folders and files are used to store content, but are not used to generate pathna
 * **`XURL`** External URL - A SRI-KBFS hash of `SRID` using Hashids and our custom alphabet. Used for sharing links to source content.
 * **`XCAT`** External Library Categorization Code - A string designating another categorization scheme such as Dewey Decimal System or Library of Congress. Multiple XCAT entries can exist.
 
-Some of these tags are generated (e.g. `XURL`). In general the `S*` names designate internal SRI-KBFS uses and `X*` names are for external references by the public.
+Some of these tags are generated (e.g. `XURL`). In general the `S*` names designate "internal private" SRI-KBFS uses and `X*` names are for "external facing" references used by the public. 
 
 ---
 #### NOTES
