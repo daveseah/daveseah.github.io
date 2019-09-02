@@ -76,14 +76,24 @@ to find local ip address via Terminal
 `ipconfig getifaddr en1` (there is an inet and inet6 prop listed)
 
 TO LIST ALL INTERFACES
-
+```
 ipconfig getifaddr $(networksetup -listallhardwareports | awk '/Hardware Port: Wi-Fi/{getline; print $2}')
+```
 
 ## REINSTALLING ON MACBOOK
-
+```
 ruby -v > 
 # ruby 2.3.7p456 (2018-03-28 revision 63024)
 gem -v
 # 2.5.2.3
+```
+## STAYING UP TO DATE
 
+This sometimes works, but there are times when the `Gemfile.lock` apparently causes problems so you ahve to delete it.
+
+In general, you use `bundle exec` for everything so it uses the local install of packages in the current directory.
+
+```
+bundle update
+```
 

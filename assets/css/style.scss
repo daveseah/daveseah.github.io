@@ -1,39 +1,46 @@
 ---
 # front matter added to force jekyll to process this file
 ---
+
 @import "jekyll-theme-minimal";
 
 /* overrides */
-.printonly { display:none }
+.printonly {
+    display: none;
+}
 
 /* makes the page blog align with logo */
 #content-subnav {
-    text-align:left;
+    text-align: left;
     margin-left: 15%;
 }
 
 /* add space betwee navigation */
-#content-subnav  .subnav {   
-  margin:0 0 20px;
+#content-subnav .subnav {
+    margin: 0 0 20px;
 }
 
 /* add subnav highlighting */
-#content-subnav  .active {
+#content-subnav .active {
     font-weight: bold;
 }
 
-@media print, screen and (max-width: 720px) {
+/* fix dumb default table alignment */
+tr {
+    vertical-align: top;
+}
 
+@media print, screen and (max-width: 720px) {
     header {
         text-align: center;
     }
     header img {
-        width:60%;
+        width: 60%;
     }
 
     #content-subnav {
-        text-align:center;
-        margin-left:0;
+        text-align: center;
+        margin-left: 0;
     }
 
     #content-subnav ul {
@@ -45,31 +52,34 @@
         width: 100%;
     }
 
-    #content-subnav h2 { display:none }
+    #content-subnav h2 {
+        display: none;
+    }
 }
 
 @media print {
-    header img, header ul {
+    header img,
+    header ul {
         display: none;
     }
     #content-subnav {
-        text-align:left;
-        margin-left:0;
+        text-align: left;
+        margin-left: 0;
     }
     .printonly {
         display: block;
-        font-size: smaller
+        font-size: smaller;
     }
 }
 
 /** lzil styles **/
 
 a.lzil.left {
-    float:left;
+    float: left;
     position: relative;
 }
 a.lzil.right {
-    float:right;
+    float: right;
     position: relative;
 }
 a.lzil img {
@@ -77,10 +87,9 @@ a.lzil img {
     border: 1px dotted gray;
 }
 a.lzil.left.pad img {
-    margin-right:4px;
+    margin-right: 4px;
 }
 a.lzil img:hover {
     border: 1px solid blue;
     background-color: blue;
 }
-
