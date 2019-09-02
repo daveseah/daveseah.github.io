@@ -3,7 +3,9 @@
 title: Dave.Sri Seah Works
 description: a collection of applicable experiences
 homepage: https://davidseah.com
-markdown: kramdown
+plugins:
+  - jekyll-sitemap
+markdown: CommonMarkGhPages
 logo: /assets/img/logo-daveseah-512x400.png
 permalink: /blog/:year/:month/:day/:title
 github.repository_url: https://github.com/daveseah
