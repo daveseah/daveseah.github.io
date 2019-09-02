@@ -65,4 +65,22 @@
 /** lzil styles **/
 
 a.lzil.left {
+    float:left;
+    position: relative;
 }
+a.lzil.right {
+    float:right;
+    position: relative;
+}
+a.lzil img {
+    padding: 4px;
+    border: 1px dotted gray;
+}
+a.lzil.left.pad img {
+    margin-right:4px;
+}
+a.lzil img:hover {
+    border: 1px solid blue;
+    background-color: blue;
+}
+

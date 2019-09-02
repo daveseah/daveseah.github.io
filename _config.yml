@@ -9,4 +9,4 @@ permalink: /blog/:year/:month/:day/:title
 github.repository_url: https://github.com/daveseah
 github.owner_url: https://davidseah.com
 github.zip_url: https://davidseah.com
-exclude: ['*.code-workspace','Gemfile','*.lock']
+exclude: ["*.code-workspace", "Gemfile", "*.lock"]

@@ -1,3 +1,7 @@
+---
+SRID: '0000:2019:0806:1234'
+title: 'Customizing Minimal Theme'
+---
 ## Customizing Minimal
 
 See https://github.com/pages-themes/minimal

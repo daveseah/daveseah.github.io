@@ -1,4 +1,4 @@
 ---
-layout: template-job-redirect
-jobmeta: "001"
+layout: redirect
+redirectTo: "page1-description"
 ---

@@ -1,3 +1,6 @@
+---
+SRID: '0000:2019:0810:0542'
+---
 # How to do UNIFIED NAVIGATION
 
 _site/bulletin/001-job.html
@@ -39,6 +42,7 @@ can also access site and page content, but not
 
 
 # INCLUDE
+{% raw %}
 
 FROM INCLUDES FOLDER (_includes)
 {% include footer.html %}
@@ -63,6 +67,7 @@ html in include template
 </div>
 call from page
 {% include note.html content="This is my sample note." %
+{% endraw %}
 
 # TEMPLATE
 
@@ -75,6 +80,8 @@ Layouts can access page object front matter, site object, and
 
 # CAPTURING OUTPUT
 this is how you do stringconcat
+
+{% raw %}
 
 capture
 {% capture my_variable %}I am being captured.{% endcapture %}
@@ -89,6 +96,7 @@ filters
 {{ "/my/fancy/url" | append: ".html" }}
 comments
 {% comment %} and {% endcomment %} 
+{% endraw %}
 
 # DATA
 
@@ -97,7 +105,7 @@ in _data/folder/blah (YAML, JSON, CSV, and TSV)
 e.g. _data/members.yml
 access with (if there are subdirectories, will get a 'hash'
 of all filenames)
-
+{% raw %}
 {% for member in site.data.members %}
     <a href="https://github.com/{{ member.github }}">
       {{ member.name }}
@@ -106,6 +114,7 @@ of all filenames)
 
 access element inside the data
 {{ site.data.people['dave']}} 
+{% endraw %}
 
 
 # NAVIGATION
@@ -126,6 +135,7 @@ docs:
 
 LIQUID
 
+{% raw %}
 <ul>
    {% for item in site.data.samplelist.docs %}
       <li><a href="{{ item.url }}">{{ item.title }}</a></li>
@@ -141,3 +151,4 @@ adding hilighting
     </li>
     {% endfor %}
 </ul>
+{% endraw %}

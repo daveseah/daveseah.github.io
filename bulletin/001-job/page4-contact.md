@@ -1,5 +1,7 @@
 ---
-layout: template-job
+SRID: '0000:2019:0811:1121'
+SKEY: 'job:4'
+layout: job
 title: Javascript Coders for Learning Sciences Projects
 jobmeta: "001"
 ---
