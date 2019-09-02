@@ -2,6 +2,9 @@
 SRID: '0000:2019:0806:2128'
 title: 'Installing Jekyll'
 ---
+
+RAW NOTES
+
 ## Modifying 
 
 Only filed with front matter are processed. Otherwise, they are copied as static files.
@@ -74,6 +77,8 @@ To SERVE on ALL INTERFACES
 
 to find local ip address via Terminal
 `ipconfig getifaddr en1` (there is an inet and inet6 prop listed)
+
+`bundle exec jekyll server --livereload --incremental` is availble in 3.7 and higher
 
 TO LIST ALL INTERFACES
 ```

@@ -15,8 +15,8 @@ Multi-page jobs are created by creating a `.yml` file in the `_data/jobmeta/` di
 header: "Javascript Coders Wanted"
 posted: "Job posted August 4, 2019"
 canonical: "/bulletin/001-job"
-email: "david@davidseah.com"
-twitter: "@daveseah"
+email: "someone@someplace.com"
+twitter: "@twitterhandle"
 nav: 
 -   title: 1. Job Description
     url: /bulletin/001-job/page1-description
@@ -48,7 +48,9 @@ Site-wide static assets go into `assets`. For images, see below.
 
 ### Adding Images
 
-You can upload image files to `davidseah.net/app/_docroot/images` in either JPEG or PNG format. If you uploaded a file to `images/19/0805-lrc-03.jpg`, use the special LZIL INCLUDE in your page file:
+I can upload image files to `davidseah.net` in the `images` directory in either JPEG or PNG format. (see the Plesk NodeJS configuration for the upload directory).
+
+If you uploaded a file to `images/19/0805-lrc-03.jpg`, use the special LZIL INCLUDE in your page file:
 
 ```
 {%raw%}
@@ -69,5 +71,3 @@ Currently the supported `LZIMG` options are:
 | nopopup | true, false | (default false) whether to implement popup (unimplemented) 
 | caption | 'caption string' | set the `title` attribute 
 | alt | 'image description' | set the `alt` attribute for screen readers 
-
-whyt
